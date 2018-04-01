@@ -180,7 +180,7 @@ void TetrisElement::doDefaultShifting(){
 
 int TetrisElement::findMaxRow() const{
 	int maxRow = -1;
-	for(int i=0; i<elements_.size(); ++i){
+	for(size_t i=0; i<elements_.size(); ++i){
 		if (elements_[i].first > maxRow){
 			maxRow = elements_[i].first;
 		}
